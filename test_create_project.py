@@ -5,7 +5,7 @@ def test_create_business_project():
     tkey = 'T101'
     url = "https://mytestsite1.atlassian.net/rest/api/2/project"
 
-    auth = HTTPBasicAuth("shilovv@sibnet.ru", "*******")
+    auth = HTTPBasicAuth("my@email.com", "***API token****")
 
     headers = {
         "Accept": "application/json",
@@ -52,7 +52,7 @@ def test_create_business_project_duplicate_name_negative():
     tkey = 'T103'
     url = "https://mytestsite1.atlassian.net/rest/api/2/project"
 
-    auth = HTTPBasicAuth("shilovv@sibnet.ru", "*******")
+    auth = HTTPBasicAuth("my@email.com", "***API token****")
 
     headers = {
         "Accept": "application/json",
@@ -101,7 +101,7 @@ def test_create_business_project_long_key_negative():
     tkey = 'T12345678910'  # более 10 символов нельзя
     url = "https://mytestsite1.atlassian.net/rest/api/2/project"
 
-    auth = HTTPBasicAuth("shilovv@sibnet.ru", "*******")
+    auth = HTTPBasicAuth("my@email.com", "***API token****")
 
     headers = {
         "Accept": "application/json",
@@ -150,7 +150,7 @@ def test_create_scrum_project_positive():
     tkey = 'T201'
     url = "https://mytestsite1.atlassian.net/rest/api/2/project"
 
-    auth = HTTPBasicAuth("shilovv@sibnet.ru", "*******")
+    auth = HTTPBasicAuth("my@email.com", "***API token****")
 
     headers = {
         "Accept": "application/json",
@@ -198,7 +198,7 @@ def test_create_scrum_project_duplicate_key_negative():
     tkey = 'T201'
     url = "https://mytestsite1.atlassian.net/rest/api/2/project"
 
-    auth = HTTPBasicAuth("shilovv@sibnet.ru", "*******")
+    auth = HTTPBasicAuth("my@email.com", "***API token****")
 
     headers = {
         "Accept": "application/json",
@@ -246,7 +246,7 @@ def test_create_scrum_project_empty_key_negative():
     tkey = ''
     url = "https://mytestsite1.atlassian.net/rest/api/2/project"
 
-    auth = HTTPBasicAuth("shilovv@sibnet.ru", "*******")
+    auth = HTTPBasicAuth("my@email.com", "***API token****")
 
     headers = {
         "Accept": "application/json",
@@ -294,7 +294,7 @@ def test_create_kanban_project_positive():
     tkey = 'T301'
     url = "https://mytestsite1.atlassian.net/rest/api/2/project"
 
-    auth = HTTPBasicAuth("shilovv@sibnet.ru", "*******")
+    auth = HTTPBasicAuth("my@email.com", "***API token****")
 
     headers = {
         "Accept": "application/json",
@@ -342,7 +342,7 @@ def test_create_kanban_project_duplicate_key_and_name_negative():
     tkey = 'T301'
     url = "https://mytestsite1.atlassian.net/rest/api/2/project"
 
-    auth = HTTPBasicAuth("shilovv@sibnet.ru", "*******")
+    auth = HTTPBasicAuth("my@email.com", "***API token****")
 
     headers = {
         "Accept": "application/json",
@@ -392,7 +392,7 @@ def test_delete_test_projects():
     for tkey in projects_key:
         url = "https://mytestsite1.atlassian.net/rest/api/2/project/" + str(tkey)
 
-        auth = HTTPBasicAuth("shilovv@sibnet.ru", "*******")
+        auth = HTTPBasicAuth("my@email.com", "***API token****")
 
         response = requests.request(
             "DELETE",

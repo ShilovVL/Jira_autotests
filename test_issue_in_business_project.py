@@ -5,8 +5,8 @@ import pytest
 
 # my constants
 admin_name = 'Василий Шилов'  # project owner
-mylogin = "shilovv@sibnet.ru"  # your email as jira login
-mypass = "*******"  # your jira api token
+mylogin = "my@email.com"  # your email as jira login
+mypass = "***API token****"  # your jira api token
 tkey = 'TB01'  # key for tmp project
 tname = "TMP test business project for test issues"  # tmp name testproject
 
@@ -1008,7 +1008,7 @@ def test_delete_all_issues():
             print(f" Задача id {issue_id} удалена. Код -", response.status_code, end='.')
 
 
-# *****************************************************
+# ***API token*******API token*******API token*******API token*******API token*******API token*******API token********
 #  Удаляем тестируемый проект - заканчиваем тест свиту
 def test_delete_test_business_project():
     url = "https://mytestsite1.atlassian.net/rest/api/2/project/" + str(tkey)

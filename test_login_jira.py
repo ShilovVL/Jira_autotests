@@ -4,7 +4,7 @@ def test_api_login():
 
     url = "https://mytestsite1.atlassian.net/rest/api/3/project"
 
-    auth = HTTPBasicAuth("", "*******")
+    auth = HTTPBasicAuth("", "***API token****")
     headers = {
         "Accept": "application/json"
     }
@@ -30,7 +30,7 @@ def test_login_web_selenium_positive():
         browser = webdriver.Chrome()
         browser.get(link)
 
-        browser.find_element_by_id('username').send_keys('shilovv@sibnet.ru')
+        browser.find_element_by_id('username').send_keys('my@email.com')
         browser.find_element_by_id('login-submit').click()
         time.sleep(1)
         browser.find_element_by_id('password').send_keys('jirabynfyn')

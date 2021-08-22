@@ -5,8 +5,8 @@ import pytest
 
 # my constants
 admin_name = 'Василий Шилов'  # project owner
-mylogin = "shilovv@sibnet.ru"  # your email as jira login
-mypass = "*******"  # your jira api token
+mylogin = "my@email.com"  # your email as jira login
+mypass = "***API token****"  # your jira api token
 tkey = 'TS02'  # key for tmp project
 tname = "TMP SCRUM test project for test issues"  # tmp name testproject
 
