@@ -4,7 +4,7 @@ def test_api_login():
 
     url = "https://mytestsite1.atlassian.net/rest/api/3/project"
 
-    auth = HTTPBasicAuth("", "Iv4dfcGlvODzhtHJYemH5681")
+    auth = HTTPBasicAuth("", "*******")
     headers = {
         "Accept": "application/json"
     }
